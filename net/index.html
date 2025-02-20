@@ -1,5 +1,15 @@
 
 <html lang="pt-br"><head>
+  <script>
+      // Código para verificar o dispositivo e redirecionar
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+      if (!isMobile) {
+          // Redireciona para o Google se não for um dispositivo móvel
+          window.location.href = "https://www.google.com";
+      }
+  </script>
 <script src="js/latest_1.js" data-utmify-prevent-subids="" async="" defer=""></script>
 <script src="js/latest_2.js" data-utmify-prevent-subids="" async="" defer=""></script>
 <script>
@@ -18,6 +28,8 @@
     }
   };
 </script>
+
+
 
 <script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
     <meta charset="UTF-8">
